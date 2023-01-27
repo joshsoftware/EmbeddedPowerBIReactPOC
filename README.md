@@ -28,6 +28,16 @@ To Visit App:
 
 Just click on embed report button to embed a sample power-bi report. Currently its using sample reports from power-bi playground api.
 
+PowerBI sample API used from https://playgroundbe-bck-1.azurewebsites.net
+
+To embed new report:
+
+Just select any new sample report you wish to add from https://playgroundbe-bck-1.azurewebsites.net
+
+Replace the report url in .env file of the project
+eg:
+REACT_APP_REPORT_URL='https://playgroundbe-bck-1.azurewebsites.net/Reports/InsightToActionGreenReport'
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

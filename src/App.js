@@ -4,9 +4,6 @@ import { useState } from "react";
 
 import "./App.css";
 
-const sampleReportUrl =
-  "https://playgroundbe-bck-1.azurewebsites.net/Reports/SampleReport";
-
 function App() {
   const [isLoading, setLoading] = useState(false);
   const [reportStatus, setReportStatus] = useState("");
@@ -29,7 +26,7 @@ function App() {
 
   const fetchReportDetails = async () => {
     setLoading(true);
-    const response = await fetch(sampleReportUrl);
+    const response = await fetch(process.env.REACT_APP_REPORT_URL);
     const responseJson = await response.json();
     console.log(responseJson);
     setEmbedConfig({
