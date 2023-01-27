@@ -1,3 +1,43 @@
+## Embedded PowerBI React POC
+
+#### Example:
+
+A react application poc used to embed PowerBI reports, report, dashboard, dashboard tile, report visual or Q&A.
+
+## Installation and Setup Instructions
+
+#### Example:
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`
+
+To Start Server:
+
+`npm start`
+
+To Run Test Suite:
+
+`npm test`
+
+To Visit App:
+
+`localhost:3000`
+
+Just click on embed report button to embed a sample power-bi report. Currently its using sample reports from power-bi playground api.
+
+PowerBI sample API used from https://playgroundbe-bck-1.azurewebsites.net
+
+To embed new report:
+
+Just select any new sample report you wish to add from https://playgroundbe-bck-1.azurewebsites.net
+
+Replace the report url in .env file of the project
+eg:
+REACT_APP_REPORT_URL='https://playgroundbe-bck-1.azurewebsites.net/Reports/InsightToActionGreenReport'
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
